@@ -42,195 +42,17 @@
       <div ng-view=""></div>
     </div>
 
-    <footer>
+    <footer ng-controller="MainCtrl">
       <div id="CreditsContentWrapper">
         <div id="ScrollbarStyleMaster" class="scrollbar-style-master" style="overflow-y: scroll !important;">
           <ul id="TickerTape" class="list-unstyled" style="display:inline-flex;overflow-y: scroll !important";">
-            <li>
+            <li ng-repeat="post in posts">
               <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
+                <pre><a ng-href="{{post.url}}">{{ post.title }}</a> : {{ post.description }}</pre>              
               </section>
             </li>
             &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
-            &nbsp;&nbsp;
-            <li>
-              <section style="background: white !important; padding:15px 5px;">
-                <pre>breaking news: balablsdglak;fbls;lablalslfd;lkgjskjgsefgkdflgds;lgsf yuck.</pre>              
-              </section>
-            </li>
+
           </ul>
         </div>  
       </div>
@@ -265,7 +87,7 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+        <!-- <script src="scripts/controllers/about.js"></script> -->
         <!-- endbuild -->
 </body>
 </html>
