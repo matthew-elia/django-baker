@@ -1,25 +1,31 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name bakerNetApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the bakerNetApp
- */
-angular.module('bakerNetApp')
-  	.controller('MainCtrl', function ($scope, $http) {
-  		
-  		$http.get('https://newsapi.org/v1/articles?source=associated-press&sortBy=latest&apiKey=22942f6468254b089d3bb18c5866a8dc').
-			then(function success(response) {
-				console.log(response);
-			  	$scope.posts = response.data.articles;
-			}).
-			catch(function error(response) {
-			  console.log(response)
-			});
+var app = angular.module('bakerNetApp');
 
-		setInterval(function(){ $('#TickerTape').animate({left: "-=4px"}) }, 160);
+app.controller('MainCtrl', function ($scope, News) {	
+	
+	var postArray=[];
+
+	News.getSources().then(function(response){
+		var sources = response.data.sources;
+		for (var i = 0; i < sources.length; i++) {
+			var id = sources[i].id;
+			News.getNews(id).then(function success(response) {
+				var articles = response.data.articles;
+				for (var i = 0; i < articles.length; i++) {
+					postArray.push(articles[i]);
+				}
+			}).then(function error(err) {
+				console.log(err);
+			});
+		}
 
 	});
+
+	// console.log(postArray);
+	$scope.posts = postArray;
+	
+	setInterval(function(){ $('#TickerTape').animate({left: "-="+$('.panel').parent().parent().width()+""}, 2000); }, 10000);
+
+});
 

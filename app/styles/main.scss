@@ -11,10 +11,6 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
  
 // globals
 * {
-  font-family: "NYC1970";
-}
-
-p,a,small {
   font-family: "London1960";
 }
 
@@ -29,10 +25,17 @@ nav.navbar-default {
   border: none;
   border-radius:0;
   margin-bottom: 0 !important;
+  span {
+    font-family:'NYC1970';
+    font-size:88px;
+    color:white;
+    background: #d9534f;
+  }
 }
 
+// main content 
 #MainContentWrap {
-  background: lightgreen;
+  background: aquamarine;
   position:fixed;
   height: 100%;
   width:100%;
@@ -52,35 +55,51 @@ nav.navbar-default {
     background: url(/images/skyline.png);
     background-size:cover;
     background-position-x:100%;
-    z-index: 1;
-    footer {
-      position:fixed;
-      left:0;right:0;bottom:0;
-      z-index:100;
-      overflow-x: scroll !important;
-      #TickerTape {
-        position: relative;
-        display: inline-flex;
-        .panel.panel-primary {
-          &:hover{
-            .panel-heading{
-              background: #d9534f;
-            }
+    z-index:1;
+    opacity:0.4;
+  }
+  footer {
+    position:fixed;
+    left:0;right:0;bottom:0;
+    z-index:100;
+    overflow-x: scroll !important;
+    #TickerTape {
+      position: relative;
+      display: inline-flex;
+      .panel {
+        width: 500px;
+        height: 150px;
+        margin: 2px;
+        &:hover{
+          .panel-heading{
+            background: #d9534f;
+            color: white;
           }
-          margin:2px;
-          min-width:700px;
-          text-overflow: ellipsis;
-          .panel-heading {
-            padding:8px;
+        }
+        .panel-heading {
+          padding:8px;
+          .panel-title {
+            font-size:18px;
+            font-weight: bolder;
           }
-          .panel-body {
-            padding:4px 8px;
+        }
+        .panel-body {
+          padding:4px 8px;
+          .panel-description {
+            font-size:16px;
+            color:black;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
           }
         }
       }
     }
   }
 }
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {}
