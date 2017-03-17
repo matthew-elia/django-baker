@@ -9,7 +9,8 @@
  */
 angular.module('bakerNetApp')
   	.controller('MainCtrl', function ($scope, $http) {
-  		$http.get('https://newsapi.org/v1/articles?source=new-york-magazine&sortBy=top&apiKey=22942f6468254b089d3bb18c5866a8dc').
+  		
+  		$http.get('https://newsapi.org/v1/articles?source=associated-press&sortBy=latest&apiKey=22942f6468254b089d3bb18c5866a8dc').
 			then(function success(response) {
 				console.log(response);
 			  	$scope.posts = response.data.articles;
@@ -19,5 +20,6 @@ angular.module('bakerNetApp')
 			});
 
 		setInterval(function(){ $('#TickerTape').animate({left: "-=4px"}) }, 160);
+
 	});
 

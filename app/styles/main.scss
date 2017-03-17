@@ -7,30 +7,18 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 @import "compass/css3";
  
 @include font-face("NYC1970", font-files("ChaletNewYorkNineteenSeventy.ttf"));
+@include font-face("London1960", font-files("ChaletLondonNineteenSixty.ttf"));
  
 // globals
   * {
     font-family: "NYC1970";
   }
-  // body {
-  //   position: absolute;
-  //   height:100%;width:100%;
-  //   padding:0;margin:0;
-  //   overflow-y: hidden;
-  // }
-  // a {
-  //   color: dodgerblue;
-  //   text-decoration: none !important;
-  //   &:hover {
-  //     color: beige;
-  //   }
-  // }
-  // hr {
-  //   border-top-color: dodgerblue;
-  //   width: 70%;
-  // }
 
+  p,a,small {
+    font-family: "London1960";
+  }
 
+  a:hover{text-decoration: none;}
 
 // primary navbar header
 nav.navbar-default {
@@ -41,53 +29,58 @@ nav.navbar-default {
   border: none;
   border-radius:0;
   margin-bottom: 0 !important;
-  #WorkingTitle {
-    font-size: 96px;
-    // text-shadow: 2px 2px 2px rgba(233,11,111,0.5);
-  }
-  #PenName {
-    font-size:48px;
-    // text-shadow: 2px 2px 2px rgba(233,11,111,0.5);
-  }
-  .navbar-collapse {
-    background: transparent !important;
-    border-bottom: none;
-  }
 }
 
 #MainContentWrap {
-  position: inherit;
-  opacity: 0.5;
-  bottom: 75px;
-  right: 0;
-  top: 0;
-  left: 0;
-  overflow-y: hidden !important;
-  overflow-x: scroll !important;
-  z-index: 1;
-  background: powderblue;
+  background: lightgreen;
+  position:fixed;
+  height: 100%;
+  width:100%;
   #RadioactiveFlowers {
-    position:absolute;
+    position:fixed;
     background: url(/images/nuclearFlowers.png);
-    opacity: 0.467;
+    opacity: 0.4;
     top: 0;
-    bottom: 0;
+    bottom:0;
     left: 0;
     right: 0;
-    color: black;
-    // background-attachment:fixed;
+    background-size: 62%;
+  }
+  #NycSkyline {
+    position: fixed;
+    background: url(/images/skyline.png);
+    right: 0;
+    top: 8%;
+    left: 0;
+    bottom:0;
+    overflow-y: hidden !important;
+    overflow-x: scroll !important;
+    z-index: 1;
+    background-size:cover;
+    background-position-x:100%;
+    footer {
+      position:fixed;
+      left:0;right:0;bottom:0;
+      z-index:100;
+      overflow-x: scroll !important;
+      #TickerTape {
+        position: relative;
+        display: inline-flex;
+        .panel.panel-primary {
+          margin:2px;
+          min-width:700px;
+          text-overflow: ellipsis;
+          .panel-heading {
+            padding:8px;
+          }
+          .panel-body {
+            padding:4px 8px;
+          }
+        }
+      }
+    }
   }
 }
 
-footer {
-  position:fixed;
-  left:0;right:0;bottom:0;
-  height: 75px;
-  background: white;
-  z-index:100;
-  #TickerTape {
-    position: relative;
-  }
-}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {}
