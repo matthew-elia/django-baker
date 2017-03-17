@@ -1,19 +1,24 @@
 <div id="RadioactiveFlowers"></div>
 <div id="NycSkyline"></div>
 
-<footer>
-  <ul id="TickerTape" class="list-unstyled">
-    <li ng-repeat="post in posts">
-      <a href="{{post.url}}" target="_blank">
-        <div class="panel panel-danger">
-          <div class="panel-heading">
-            <h1 class="panel-title">{{ post.title }}</h1>
-          </div>
-          <div class="panel-body">
-            <p class="panel-description">{{ post.description }}</p>
+<ul id="NewsTicker" class="list-unstyled">
+  <li class="article-list-item" ng-repeat="article in articles">
+    <a href="{{article.url}}" target="_blank">
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <h1 class="panel-title">{{ article.title }}</h1>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-4">
+              <img src="{{ article.urlToImage }}" class="article-image img-responsive center-block"  style="max-height:120px;" />
+            </div>
+            <div class="col-xs-8">
+              <p class="panel-description">{{ article.description }}</p>
+            </div>
           </div>
         </div>
-      </a> 
-    </li>
-  </ul>
-</footer>
+      </div>
+    </a> 
+  </li>
+</ul>

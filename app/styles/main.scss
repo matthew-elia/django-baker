@@ -27,7 +27,7 @@ nav.navbar-default {
   margin-bottom: 0 !important;
   span {
     font-family:'NYC1970';
-    font-size:88px;
+    font-size:50px;
     color:white;
     background: #d9534f;
   }
@@ -58,17 +58,16 @@ nav.navbar-default {
     z-index:1;
     opacity:0.4;
   }
-  footer {
-    position:fixed;
-    left:0;right:0;bottom:0;
-    z-index:100;
-    overflow-x: scroll !important;
-    #TickerTape {
-      position: relative;
+    #NewsTicker {
+      position:fixed;
+      left:0;right:0;bottom:0;
+      z-index:100;
+      height:220px; 
+      overflow-x: scroll !important;
       display: inline-flex;
       .panel {
         width: 500px;
-        height: 150px;
+        height: 100%;
         margin: 2px;
         &:hover{
           .panel-heading{
@@ -77,6 +76,7 @@ nav.navbar-default {
           }
         }
         .panel-heading {
+          min-height: 50px;
           padding:8px;
           .panel-title {
             font-size:18px;
@@ -92,13 +92,12 @@ nav.navbar-default {
             text-overflow: ellipsis;
             display: -webkit-box;
             -webkit-box-orient: vertical;
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 5;
           }
         }
       }
     }
   }
-}
 
 
 /* Responsive: Portrait tablets and up */
