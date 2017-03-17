@@ -8,10 +8,6 @@
  * Controller of the bakerNetApp
  */
 angular.module('bakerNetApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  	.controller('MainCtrl', function () {
+		setInterval(function(){ $('#TickerTape').animate({left: "-=4px"}) }, 160);
+	});
