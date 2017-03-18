@@ -1,6 +1,8 @@
 /client/node_modules
 /client/dist
-client/.tmp/*
-/.sass-cache
+/.tmp
+*/.sass-cache
 /client/bower_components
+server/*.pyc
+server/bakerNet/*.pyc
 db.sqlite3
