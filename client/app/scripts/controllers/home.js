@@ -43,7 +43,7 @@ app.controller('HomeCtrl', function ($scope, News) {
 	console.log(articleArray);
 	$scope.articles = articleArray;
 		
-	setInterval(function(){ $('#NewsTicker').animate({left: "-="+$('.article-list-item').width() }, 2000); }, 10000);
+	// setInterval(function(){ $('#NewsTicker').animate({left: "-="+$('.article-list-item').width() }, 2000); }, 10000);
 
 });
 

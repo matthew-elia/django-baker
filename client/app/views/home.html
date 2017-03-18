@@ -1,30 +1,28 @@
 <div ng-controller="HomeCtrl">
   
+  <div id="RadioactiveFlowers"></div>
+  <div id="NycSkyline"></div>
 
-
-<div id="RadioactiveFlowers"></div>
-<div id="NycSkyline"></div>
-
-<ul id="NewsTicker" class="list-unstyled">
-  <li class="article-list-item" ng-repeat="article in articles">
-    <a href="{{article.url}}" target="_blank">
-      <div class="panel panel-danger">
-        <div class="panel-heading">
-          <h1 class="panel-title">{{ article.title }}</h1>
-        </div>
-        <div class="panel-body">
-          <div class="row">
-            <div class="col-xs-4">
-              <img src="{{ article.urlToImage }}" class="article-image img-responsive center-block"  style="max-height:120px;" />
-            </div>
-            <div class="col-xs-8">
-              <p class="panel-description">{{ article.description }}</p>
+  <ul id="NewsTicker" class="list-unstyled">
+    <li class="article-list-item" ng-repeat="article in articles">
+      <a href="{{article.url}}" target="_blank">
+        <div class="panel panel-danger">
+          <div class="panel-heading">
+            <h1 class="panel-title">{{ article.title }}</h1>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-xs-4">
+                <img src="{{ article.urlToImage }}" class="article-image img-responsive center-block"  style="max-height:120px;" />
+              </div>
+              <div class="col-xs-8">
+                <p class="panel-description">{{ article.description }}</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </a> 
-  </li>
-</ul>
+      </a> 
+    </li>
+  </ul>
 
 </div>
