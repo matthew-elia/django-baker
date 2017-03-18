@@ -4,8 +4,30 @@ a:hover{text-decoration:none !important;}
 @import "__mixins.scss";
 @import "__variables.scss";
 
-@import "base/header.scss";
 @import "pages/auth.scss";
+
+
+// primary navbar header
+nav.navbar-default {
+  z-index: 1000;
+  border: none;
+  height: 60px;
+  border-radius:0;
+  margin-bottom: 0 !important;
+  background: $primaryRed;
+  a {
+    font-family: $nyc1970;
+    font-size:45px;
+    color:white;
+    margin: auto 5px;
+    &:hover {
+      color:$black;
+    }
+    i:hover { 
+      color: gold;
+  	}
+  }
+}
 
 #RadioactiveFlowers {
   position:fixed;

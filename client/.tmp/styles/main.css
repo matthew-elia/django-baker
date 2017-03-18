@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/* line 1, ../../app/styles/main.scss */
+a:hover {
+  text-decoration: none !important;
+}
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -12434,23 +12439,12 @@ button.close {
   font-family: "London1960";
   src: url('/styles/fonts/ChaletLondonNineteenSixty.ttf') format('truetype');
 }
-/* line 13, ../../app/styles/main.scss */
-* {
-  font-family: "London1960";
+/* line 2, ../../app/styles/pages/auth.scss */
+#LoginContainer {
+  margin-top: 100px;
 }
 
-/* line 16, ../../app/styles/main.scss */
-a:hover {
-  text-decoration: none;
-}
-
-/* line 20, ../../app/styles/main.scss */
-.wrapper {
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
-/* line 25, ../../app/styles/main.scss */
+/* line 5, ../../app/styles/pages/auth.scss */
 .form-signin {
   max-width: 380px;
   padding: 15px 35px 45px;
@@ -12458,45 +12452,45 @@ a:hover {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-/* line 32, ../../app/styles/main.scss */
+/* line 12, ../../app/styles/pages/auth.scss */
+.form-signin .form-signin-heading i {
+  color: black;
+}
+/* line 14, ../../app/styles/pages/auth.scss */
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
   margin-bottom: 30px;
 }
-/* line 37, ../../app/styles/main.scss */
+/* line 18, ../../app/styles/pages/auth.scss */
 .form-signin .checkbox {
   font-weight: normal;
 }
-/* line 41, ../../app/styles/main.scss */
+/* line 21, ../../app/styles/pages/auth.scss */
 .form-signin .form-control {
   position: relative;
   font-size: 16px;
   height: auto;
   padding: 10px;
-  box-sizing: border-box;
 }
-/* line 48, ../../app/styles/main.scss */
+/* line 27, ../../app/styles/pages/auth.scss */
 .form-signin .form-control:focus {
   z-index: 2;
 }
-/* line 53, ../../app/styles/main.scss */
+/* line 31, ../../app/styles/pages/auth.scss */
 .form-signin input[type="text"] {
   margin-bottom: -1px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-/* line 59, ../../app/styles/main.scss */
+/* line 36, ../../app/styles/pages/auth.scss */
 .form-signin input[type="password"] {
   margin-bottom: 20px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-/* line 68, ../../app/styles/main.scss */
+/* line 11, ../../app/styles/main.scss */
 nav.navbar-default {
-  position: fixed;
-  left: 0;
-  right: 0;
   z-index: 1000;
   border: none;
   height: 60px;
@@ -12504,14 +12498,23 @@ nav.navbar-default {
   margin-bottom: 0 !important;
   background: #d9534f;
 }
-/* line 77, ../../app/styles/main.scss */
-nav.navbar-default span {
-  font-family: 'NYC1970';
-  font-size: 50px;
+/* line 18, ../../app/styles/main.scss */
+nav.navbar-default a {
+  font-family: "NYC1970";
+  font-size: 45px;
   color: white;
+  margin: auto 5px;
+}
+/* line 23, ../../app/styles/main.scss */
+nav.navbar-default a:hover {
+  color: black;
+}
+/* line 26, ../../app/styles/main.scss */
+nav.navbar-default a i:hover {
+  color: gold;
 }
 
-/* line 90, ../../app/styles/main.scss */
+/* line 32, ../../app/styles/main.scss */
 #RadioactiveFlowers {
   position: fixed;
   background: url(/images/nuclearFlowers.png);
@@ -12523,7 +12526,7 @@ nav.navbar-default span {
   background-size: 62%;
 }
 
-/* line 100, ../../app/styles/main.scss */
+/* line 43, ../../app/styles/main.scss */
 #NycSkyline {
   position: fixed;
   top: 8%;
@@ -12537,7 +12540,7 @@ nav.navbar-default span {
   opacity: 0.4;
 }
 
-/* line 109, ../../app/styles/main.scss */
+/* line 53, ../../app/styles/main.scss */
 #NewsTicker {
   position: fixed;
   left: 0;
@@ -12548,32 +12551,32 @@ nav.navbar-default span {
   overflow-x: scroll !important;
   display: inline-flex;
 }
-/* line 116, ../../app/styles/main.scss */
+/* line 60, ../../app/styles/main.scss */
 #NewsTicker .panel {
   width: 500px;
   height: 100%;
   margin: 2px;
 }
-/* line 121, ../../app/styles/main.scss */
+/* line 65, ../../app/styles/main.scss */
 #NewsTicker .panel:hover .panel-heading {
   background: #d9534f;
   color: white;
 }
-/* line 126, ../../app/styles/main.scss */
+/* line 70, ../../app/styles/main.scss */
 #NewsTicker .panel .panel-heading {
   min-height: 50px;
   padding: 8px;
 }
-/* line 129, ../../app/styles/main.scss */
+/* line 73, ../../app/styles/main.scss */
 #NewsTicker .panel .panel-heading .panel-title {
   font-size: 18px;
   font-weight: bolder;
 }
-/* line 134, ../../app/styles/main.scss */
+/* line 78, ../../app/styles/main.scss */
 #NewsTicker .panel .panel-body {
   padding: 4px 8px;
 }
-/* line 136, ../../app/styles/main.scss */
+/* line 80, ../../app/styles/main.scss */
 #NewsTicker .panel .panel-body .panel-description {
   font-size: 16px;
   color: black;
@@ -12585,4 +12588,5 @@ nav.navbar-default span {
 }
 
 /* Responsive: Portrait tablets and up */
+
 /*# sourceMappingURL=main.css.map */
