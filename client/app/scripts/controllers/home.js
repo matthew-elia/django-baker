@@ -2,7 +2,7 @@
 
 var app = angular.module('bakerNetApp');
 
-app.controller('MainCtrl', function ($scope, News) {	
+app.controller('HomeCtrl', function ($scope, News) {	
 	
 	var id;
 	var articleArray = [];
@@ -43,7 +43,7 @@ app.controller('MainCtrl', function ($scope, News) {
 	console.log(articleArray);
 	$scope.articles = articleArray;
 		
-	setInterval(function(){ $('#NewsTicker').animate({left: "-="+$('.article-list-item').width() }, 2000); }, 8000);
+	setInterval(function(){ $('#NewsTicker').animate({left: "-="+$('.article-list-item').width() }, 2000); }, 10000);
 
 });
 

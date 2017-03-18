@@ -9,24 +9,26 @@
  * Main module of the application.
  */
 
-var app = angular
+angular
   .module('bakerNetApp', [
+    'ui.router',
     'ngAnimate',
     'ngCookies',
     'ngResource',
-    'ngRoute',
     'ngSanitize',
     'ngTouch'
-  ]);
-
-  app.config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+  ])
+  .config(function ($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider
+      .otherwise('/')
+    $stateProvider
+      .state('home', {
+        url: '/home',
+        templateUrl: 'views/home.html'
       })
-      .otherwise({
-        redirectTo: '/'
+      .state('login', {
+        url: '/login',
+        templateUrl: 'views/auth/login.html'
       });
   });
+

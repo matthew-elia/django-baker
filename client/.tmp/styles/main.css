@@ -12439,39 +12439,80 @@ button.close {
   font-family: "London1960";
 }
 
-/* line 17, ../../app/styles/main.scss */
+/* line 16, ../../app/styles/main.scss */
 a:hover {
   text-decoration: none;
 }
 
 /* line 20, ../../app/styles/main.scss */
+.wrapper {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/* line 25, ../../app/styles/main.scss */
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* line 32, ../../app/styles/main.scss */
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 30px;
+}
+/* line 37, ../../app/styles/main.scss */
+.form-signin .checkbox {
+  font-weight: normal;
+}
+/* line 41, ../../app/styles/main.scss */
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+/* line 48, ../../app/styles/main.scss */
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+/* line 53, ../../app/styles/main.scss */
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+/* line 59, ../../app/styles/main.scss */
+.form-signin input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* line 68, ../../app/styles/main.scss */
 nav.navbar-default {
   position: fixed;
   left: 0;
   right: 0;
   z-index: 1000;
-  background: transparent !important;
   border: none;
+  height: 60px;
   border-radius: 0;
   margin-bottom: 0 !important;
+  background: #d9534f;
 }
-/* line 28, ../../app/styles/main.scss */
+/* line 77, ../../app/styles/main.scss */
 nav.navbar-default span {
   font-family: 'NYC1970';
   font-size: 50px;
   color: white;
-  background: #d9534f;
 }
 
-/* line 37, ../../app/styles/main.scss */
-#MainContentWrap {
-  background: aquamarine;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-}
-/* line 42, ../../app/styles/main.scss */
-#MainContentWrap #RadioactiveFlowers {
+/* line 90, ../../app/styles/main.scss */
+#RadioactiveFlowers {
   position: fixed;
   background: url(/images/nuclearFlowers.png);
   opacity: 0.4;
@@ -12481,8 +12522,9 @@ nav.navbar-default span {
   right: 0;
   background-size: 62%;
 }
-/* line 52, ../../app/styles/main.scss */
-#MainContentWrap #NycSkyline {
+
+/* line 100, ../../app/styles/main.scss */
+#NycSkyline {
   position: fixed;
   top: 8%;
   left: 0;
@@ -12494,8 +12536,9 @@ nav.navbar-default span {
   z-index: 1;
   opacity: 0.4;
 }
-/* line 61, ../../app/styles/main.scss */
-#MainContentWrap #NewsTicker {
+
+/* line 109, ../../app/styles/main.scss */
+#NewsTicker {
   position: fixed;
   left: 0;
   right: 0;
@@ -12505,33 +12548,33 @@ nav.navbar-default span {
   overflow-x: scroll !important;
   display: inline-flex;
 }
-/* line 68, ../../app/styles/main.scss */
-#MainContentWrap #NewsTicker .panel {
+/* line 116, ../../app/styles/main.scss */
+#NewsTicker .panel {
   width: 500px;
   height: 100%;
   margin: 2px;
 }
-/* line 73, ../../app/styles/main.scss */
-#MainContentWrap #NewsTicker .panel:hover .panel-heading {
+/* line 121, ../../app/styles/main.scss */
+#NewsTicker .panel:hover .panel-heading {
   background: #d9534f;
   color: white;
 }
-/* line 78, ../../app/styles/main.scss */
-#MainContentWrap #NewsTicker .panel .panel-heading {
+/* line 126, ../../app/styles/main.scss */
+#NewsTicker .panel .panel-heading {
   min-height: 50px;
   padding: 8px;
 }
-/* line 81, ../../app/styles/main.scss */
-#MainContentWrap #NewsTicker .panel .panel-heading .panel-title {
+/* line 129, ../../app/styles/main.scss */
+#NewsTicker .panel .panel-heading .panel-title {
   font-size: 18px;
   font-weight: bolder;
 }
-/* line 86, ../../app/styles/main.scss */
-#MainContentWrap #NewsTicker .panel .panel-body {
+/* line 134, ../../app/styles/main.scss */
+#NewsTicker .panel .panel-body {
   padding: 4px 8px;
 }
-/* line 88, ../../app/styles/main.scss */
-#MainContentWrap #NewsTicker .panel .panel-body .panel-description {
+/* line 136, ../../app/styles/main.scss */
+#NewsTicker .panel .panel-body .panel-description {
   font-size: 16px;
   color: black;
   overflow: hidden;
